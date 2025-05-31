@@ -45,6 +45,10 @@ def username_generator(name: str) -> List[str]:
             unique_usernames.append(u)
             seen.add(u)
 
+    with open("usernamelist.txt", "w") as file:
+        for uname in unique_usernames:
+            file.write(uname + "\n")
+
     return unique_usernames
 
 def main():
