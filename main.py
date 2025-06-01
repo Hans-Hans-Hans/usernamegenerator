@@ -12,7 +12,7 @@ def clean_name_part(name_part: str) -> str:
 
 def username_generator(name: str) -> List[str]:
     """
-        Input: User submits a  irst and last name.
+        Input: User submits a first and last name.
         Returns: A .txt file of potential usernames.
     """
     if not is_valid_name(name):
